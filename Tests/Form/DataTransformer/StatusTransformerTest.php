@@ -1,10 +1,10 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\Form\DataTransformer;
+namespace Flexsounds\TicketBundle\Tests\Form\DataTransformer;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class StatusTransformerTest extends WebTestCase
 {
@@ -12,7 +12,7 @@ class StatusTransformerTest extends WebTestCase
 
     public function setUp()
     {
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\Form\DataTransformer\StatusTransformer();
+        $this->_object = new \Flexsounds\TicketBundle\Form\DataTransformer\StatusTransformer();
     }
 
     public function tearDown()

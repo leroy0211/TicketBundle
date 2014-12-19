@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Form\Type;
+namespace Flexsounds\TicketBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -38,7 +38,7 @@ class TicketType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Hackzilla\Bundle\TicketBundle\Entity\Ticket'
+            'data_class' => 'Flexsounds\TicketBundle\Entity\Ticket'
         ));
     }
 
@@ -47,7 +47,7 @@ class TicketType extends AbstractType
      */
     public function getName()
     {
-        return 'hackzilla_bundle_ticketbundle_tickettype';
+        return 'flexsounds_bundle_ticketbundle_tickettype';
     }
 
 }

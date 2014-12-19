@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\Form\Type;
+namespace Flexsounds\TicketBundle\Tests\Form\Type;
 
 use Symfony\Component\Form\Test\TypeTestCase;
 
@@ -10,7 +10,7 @@ class StatusTypeTest extends TypeTestCase
 
     public function setUp()
     {
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\Form\Type\StatusType();
+        $this->_object = new \Flexsounds\TicketBundle\Form\Type\StatusType();
     }
 
     public function tearDown()

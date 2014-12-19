@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Entity;
+namespace Flexsounds\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Message
  *
  * @ORM\Table(name="ticket_message")
- * @ORM\Entity(repositoryClass="Hackzilla\Bundle\TicketBundle\Entity\TicketMessageRepository")
+ * @ORM\Entity(repositoryClass="Flexsounds\TicketBundle\Entity\TicketMessageRepository")
  */
 class TicketMessage
 {
@@ -295,10 +295,10 @@ class TicketMessage
     /**
      * Set ticket
      *
-     * @param \Hackzilla\Bundle\TicketBundle\Entity\Ticket $ticket
+     * @param \Flexsounds\TicketBundle\Entity\Ticket $ticket
      * @return Message
      */
-    public function setTicket(\Hackzilla\Bundle\TicketBundle\Entity\Ticket $ticket = null)
+    public function setTicket(\Flexsounds\TicketBundle\Entity\Ticket $ticket = null)
     {
         $this->ticket = $ticket;
 
@@ -324,7 +324,7 @@ class TicketMessage
     /**
      * Get ticket
      *
-     * @return \Hackzilla\Bundle\TicketBundle\Entity\Ticket 
+     * @return \Flexsounds\TicketBundle\Entity\Ticket 
      */
     public function getTicket()
     {

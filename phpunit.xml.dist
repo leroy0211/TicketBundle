@@ -13,7 +13,7 @@
 >
 
     <testsuites>
-        <testsuite name="HackzillaTicketBundle test suite">
+        <testsuite name="FlexsoundsTicketBundle test suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>

@@ -1,9 +1,9 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Event;
+namespace Flexsounds\TicketBundle\Event;
 
 use Symfony\Component\EventDispatcher\Event;
-use Hackzilla\Bundle\TicketBundle\Entity\Ticket;
+use Flexsounds\TicketBundle\Entity\Ticket;
 
 class TicketEvent extends Event
 {

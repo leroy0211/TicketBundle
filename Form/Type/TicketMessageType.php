@@ -1,12 +1,12 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Form\Type;
+namespace Flexsounds\TicketBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Hackzilla\Interfaces\User\UserInterface;
-use Hackzilla\Bundle\TicketBundle\Form\DataTransformer\StatusTransformer;
+use Flexsounds\TicketBundle\Form\DataTransformer\StatusTransformer;
 
 class TicketMessageType extends AbstractType
 {
@@ -64,7 +64,7 @@ class TicketMessageType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Hackzilla\Bundle\TicketBundle\Entity\TicketMessage',
+            'data_class' => 'Flexsounds\TicketBundle\Entity\TicketMessage',
         ));
     }
 
@@ -73,7 +73,7 @@ class TicketMessageType extends AbstractType
      */
     public function getName()
     {
-        return 'hackzilla_bundle_ticketbundle_tickettype';
+        return 'flexsounds_bundle_ticketbundle_tickettype';
     }
 
 }

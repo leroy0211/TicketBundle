@@ -1,13 +1,13 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Extension;
+namespace Flexsounds\TicketBundle\Extension;
 
 class UserExtension extends \Twig_Extension
 {
     private $userManager;
 
     public function __construct($container) {
-        $this->userManager = $container->get('hackzilla_ticket.user');
+        $this->userManager = $container->get('flexsounds_ticket.user');
     }
 
     public function getFilters() {
@@ -27,6 +27,6 @@ class UserExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'hackzilla_ticket_user_extension';
+        return 'flexsounds_ticket_user_extension';
     }
 }

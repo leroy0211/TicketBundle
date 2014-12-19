@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Entity;
+namespace Flexsounds\TicketBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Ticket
  *
  * @ORM\Table(name="ticket")
- * @ORM\Entity(repositoryClass="Hackzilla\Bundle\TicketBundle\Entity\TicketRepository")
+ * @ORM\Entity(repositoryClass="Flexsounds\TicketBundle\Entity\TicketRepository")
  * @ORM\HasLifecycleCallbacks
  */
 class Ticket
@@ -340,10 +340,10 @@ class Ticket
     /**
      * Add messages
      *
-     * @param \Hackzilla\Bundle\TicketBundle\Entity\TicketMessage $messages
+     * @param \Flexsounds\TicketBundle\Entity\TicketMessage $messages
      * @return Ticket
      */
-    public function addMessage(\Hackzilla\Bundle\TicketBundle\Entity\TicketMessage $messages)
+    public function addMessage(\Flexsounds\TicketBundle\Entity\TicketMessage $messages)
     {
         $this->messages[] = $messages;
 
@@ -353,9 +353,9 @@ class Ticket
     /**
      * Remove messages
      *
-     * @param \Hackzilla\Bundle\TicketBundle\Entity\TicketMessage $messages
+     * @param \Flexsounds\TicketBundle\Entity\TicketMessage $messages
      */
-    public function removeMessage(\Hackzilla\Bundle\TicketBundle\Entity\TicketMessage $messages)
+    public function removeMessage(\Flexsounds\TicketBundle\Entity\TicketMessage $messages)
     {
         $this->messages->removeElement($messages);
     }

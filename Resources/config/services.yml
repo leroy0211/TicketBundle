@@ -1,25 +1,25 @@
 parameters:
-    hackzilla_ticket.user_load.class: Hackzilla\Bundle\TicketBundle\EventListener\UserLoad
-    hackzilla_ticket.twig_user.class: Hackzilla\Bundle\TicketBundle\Extension\UserExtension
-    hackzilla_ticket.ticket_manager.class: Hackzilla\Bundle\TicketBundle\Entity\TicketManager
+    flexsounds_ticket.user_load.class: Flexsounds\TicketBundle\EventListener\UserLoad
+    flexsounds_ticket.twig_user.class: Flexsounds\TicketBundle\Extension\UserExtension
+    flexsounds_ticket.ticket_manager.class: Flexsounds\TicketBundle\Entity\TicketManager
 
 services:
-    hackzilla_ticket.listener:
-        class: %hackzilla_ticket.user_load.class%
+    flexsounds_ticket.listener:
+        class: %flexsounds_ticket.user_load.class%
         arguments: ['@service_container']
         tags:
             - { name: doctrine.event_listener, event: postLoad }
 
-    hackzilla_ticket_user_extension:
-        class: %hackzilla_ticket.twig_user.class%
+    flexsounds_ticket_user_extension:
+        class: %flexsounds_ticket.twig_user.class%
         arguments: ['@service_container']
         tags:
             - { name: twig.extension }
 
-    hackzilla_ticket.user:
+    flexsounds_ticket.user:
         class: %hackzilla_ticket.user_bridge.class%
         arguments: ['@service_container']
 
-    hackzilla_ticket.ticket_manager:
-        class: %hackzilla_ticket.ticket_manager.class%
+    flexsounds_ticket.ticket_manager:
+        class: %flexsounds_ticket.ticket_manager.class%
         arguments: ["@doctrine.orm.entity_manager"]

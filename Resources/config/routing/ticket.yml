@@ -1,25 +1,25 @@
-hackzilla_ticket:
+flexsounds_ticket:
     pattern:  /
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:index" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:index" }
 
-hackzilla_ticket_show:
+flexsounds_ticket_show:
     pattern:  /{id}/show
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:show" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:show" }
 
-hackzilla_ticket_new:
+flexsounds_ticket_new:
     pattern:  /new
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:new" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:new" }
 
-hackzilla_ticket_create:
+flexsounds_ticket_create:
     pattern:  /create
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:create" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:create" }
     requirements: { _method: post }
 
-hackzilla_ticket_delete:
+flexsounds_ticket_delete:
     pattern:  /{id}/delete
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:delete" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:delete" }
     requirements: { _method: post|delete }
 
-hackzilla_ticket_reply:
+flexsounds_ticket_reply:
     pattern:  /{id}/reply
-    defaults: { _controller: "HackzillaTicketBundle:Ticket:reply" }
+    defaults: { _controller: "FlexsoundsTicketBundle:Ticket:reply" }

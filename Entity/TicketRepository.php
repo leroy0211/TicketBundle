@@ -1,10 +1,10 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Entity;
+namespace Flexsounds\TicketBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 /**
  * TicketRepository

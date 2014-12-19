@@ -1,9 +1,9 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\Form\Type;
+namespace Flexsounds\TicketBundle\Tests\Form\Type;
 
 use Symfony\Component\Form\Test\TypeTestCase;
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class TicketMessageTypeTest extends TypeTestCase
 {
@@ -17,9 +17,9 @@ class TicketMessageTypeTest extends TypeTestCase
         $userManager = $this->getMock('Hackzilla\Interfaces\User\UserInterface');
         $this->assertTrue($userManager instanceof \Hackzilla\Interfaces\User\UserInterface);
       
-        $type = new \Hackzilla\Bundle\TicketBundle\Form\Type\TicketMessageType($userManager, true);
+        $type = new \Flexsounds\TicketBundle\Form\Type\TicketMessageType($userManager, true);
 
-        $data = new \Hackzilla\Bundle\TicketBundle\Entity\TicketMessage();
+        $data = new \Flexsounds\TicketBundle\Entity\TicketMessage();
         $data->setPriority(TicketMessage::PRIORITY_HIGH);
         
         $form = $this->factory->create($type);

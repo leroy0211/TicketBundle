@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Entity;
+namespace Flexsounds\TicketBundle\Entity;
 
 interface TicketManagerInterface{
 

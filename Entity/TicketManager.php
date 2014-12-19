@@ -1,17 +1,17 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Entity;
+namespace Flexsounds\TicketBundle\Entity;
 
 use Doctrine\Common\Persistence\ObjectManager;
-use Hackzilla\Bundle\TicketBundle\Entity\TicketManagerInterface;
-use Hackzilla\Bundle\TicketBundle\Entity\Ticket;
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\TicketManagerInterface;
+use Flexsounds\TicketBundle\Entity\Ticket;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class TicketManager implements TicketManagerInterface {
 
 	public function __construct(ObjectManager $om){
 		$this->ObjectManager = $om;
-		$this->repository = $om->getRepository('HackzillaTicketBundle:Ticket');
+		$this->repository = $om->getRepository('FlexsoundsTicketBundle:Ticket');
 	}
 
 	/*

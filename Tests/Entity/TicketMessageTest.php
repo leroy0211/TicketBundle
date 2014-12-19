@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\Entity;
+namespace Flexsounds\TicketBundle\Tests\Entity;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -10,7 +10,7 @@ class TicketMessageTest extends WebTestCase
 
     public function setUp()
     {
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\Entity\TicketMessage();
+        $this->_object = new \Flexsounds\TicketBundle\Entity\TicketMessage();
     }
 
     public function tearDown()

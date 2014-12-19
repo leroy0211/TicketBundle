@@ -1,7 +1,7 @@
-{% extends 'HackzillaTicketBundle::layout.html.twig' %}
+{% extends 'FlexsoundsTicketBundle::layout.html.twig' %}
 
 {% block hackzilla_ticket_content -%}
-<a href="{{ path('hackzilla_ticket_new') }}" class="btn btn-primary pull-right">{{ 'BUTTON_NEW'|trans }}</a>
+<a href="{{ path('flexsounds_ticket_new') }}" class="btn btn-primary pull-right">{{ 'BUTTON_NEW'|trans }}</a>
 <h1>{{ 'HEADING_TICKET_LIST'|trans }}</h1>
 
 {%- if ticketState == 'STATUS_CLOSED'|trans %}
@@ -26,8 +26,8 @@
     <tbody>
     {% for entity in pagination %}
         <tr>
-            <td><a href="{{ path('hackzilla_ticket_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-            <td><a href="{{ path('hackzilla_ticket_show', { 'id': entity.id }) }}">{{ entity.subject }}</a></td>
+            <td><a href="{{ path('flexsounds_ticket_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td><a href="{{ path('flexsounds_ticket_show', { 'id': entity.id }) }}">{{ entity.subject }}</a></td>
             <td>{{ entity.statusString|trans }}</td>
             <td>{{ entity.priorityString|trans }}</td>
             <td>{% if entity.lastMessage %}{{ entity.lastMessage|date('Y-m-d H:i:s') }}{% endif %}</td>

@@ -1,13 +1,13 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Command;
+namespace Flexsounds\TicketBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class TicketManagerCommand extends ContainerAwareCommand
 {
@@ -46,7 +46,7 @@ class TicketManagerCommand extends ContainerAwareCommand
     {
         $userManager = $this->getContainer()->get('fos_user.user_manager');
 
-        $ticketmanager = $this->getContainer()->get('hackzilla_ticket.ticket_manager');
+        $ticketmanager = $this->getContainer()->get('flexsounds_ticket.ticket_manager');
 
         $ticket = $ticketmanager->createTicket();
         $ticket->setSubject($input->getArgument('subject'));

@@ -1,8 +1,8 @@
-{% extends 'HackzillaTicketBundle::layout.html.twig' %}
+{% extends 'FlexsoundsTicketBundle::layout.html.twig' %}
 
 {% block hackzilla_ticket_content -%}
 <h1>{{ 'HEADING_TICKET_ID'|trans({'%id%': ticket.id}) }}</h1>
-<p><a href="{{ path('hackzilla_ticket') }}">Back to List</a></p>
+<p><a href="{{ path('flexsounds_ticket') }}">Back to List</a></p>
 
 <div class="row well">
     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -109,9 +109,9 @@
 </div>
 
 {% if form is defined %}
-<form action="{{ path('hackzilla_ticket_reply', {id: ticket.id}) }}" method="post" {{ form_enctype(form) }}>
+<form action="{{ path('flexsounds_ticket_reply', {id: ticket.id}) }}" method="post" {{ form_enctype(form) }}>
 
-    {% include 'HackzillaTicketBundle:Ticket:prototype.html.twig' with {'form': form} %}
+    {% include 'FlexsoundsTicketBundle:Ticket:prototype.html.twig' with {'form': form} %}
 
     {{ form_rest(form) }}
     
@@ -122,11 +122,11 @@
 {% endif %}
 
 {% if delete_form is defined %}
-<form action="{{ path('hackzilla_ticket_delete', { 'id': ticket.id }) }}" method="post">
+<form action="{{ path('flexsounds_ticket_delete', { 'id': ticket.id }) }}" method="post">
     <input type="hidden" name="_method" value="DELETE" />
     {{ form_widget(delete_form) }}
 
-    <a href="{{ path('hackzilla_ticket') }}" class="btn btn-default">
+    <a href="{{ path('flexsounds_ticket') }}" class="btn btn-default">
         {{ 'BUTTON_BACK_TO_LIST'|trans }}
     </a>
 

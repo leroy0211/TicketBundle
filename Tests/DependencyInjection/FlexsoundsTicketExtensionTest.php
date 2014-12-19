@@ -1,16 +1,16 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\DependencyInjection;
+namespace Flexsounds\TicketBundle\Tests\DependencyInjection;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class HackzillaTicketExtensionTest extends WebTestCase
+class FlexsoundsTicketExtensionTest extends WebTestCase
 {
     private $_object;
 
     public function setUp()
     {
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\DependencyInjection\HackzillaTicketExtension();
+        $this->_object = new \Flexsounds\TicketBundle\DependencyInjection\FlexsoundsTicketExtension();
     }
 
     public function tearDown()

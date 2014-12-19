@@ -1,10 +1,10 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\EventListener;
+namespace Flexsounds\TicketBundle\EventListener;
 
 use Doctrine\ORM\Event\LifecycleEventArgs;
-use Hackzilla\Bundle\TicketBundle\Entity\Ticket;
-use Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use Flexsounds\TicketBundle\Entity\Ticket;
+use Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class UserLoad
 {
@@ -26,7 +26,7 @@ class UserLoad
     public function postLoad(LifecycleEventArgs $args)
     {
         $entity = $args->getEntity();
-        $userManager = $this->container->get('hackzilla_ticket.user');
+        $userManager = $this->container->get('flexsounds_ticket.user');
 
         if ($entity instanceof Ticket) {
             if (\is_null($entity->getUserCreatedObject())) {

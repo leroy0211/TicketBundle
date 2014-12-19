@@ -1,10 +1,10 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Form\Type;
+namespace Flexsounds\TicketBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use \Hackzilla\Bundle\TicketBundle\Entity\TicketMessage;
+use \Flexsounds\TicketBundle\Entity\TicketMessage;
 
 class PriorityType extends AbstractType
 {

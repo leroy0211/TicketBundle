@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\Extension;
+namespace Flexsounds\TicketBundle\Tests\Extension;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -12,7 +12,7 @@ class UserExtensionTest extends WebTestCase
     {
         $container = $this->getMockContainer();
 
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\Extension\UserExtension($container);
+        $this->_object = new \Flexsounds\TicketBundle\Extension\UserExtension($container);
     }
 
     public function getMockContainer()

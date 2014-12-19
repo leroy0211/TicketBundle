@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\TicketBundle\Tests\EventListener;
+namespace Flexsounds\TicketBundle\Tests\EventListener;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -12,7 +12,7 @@ class UserLoad extends WebTestCase
     {
         $container = $this->getMockContainer();
 
-        $this->_object = new \Hackzilla\Bundle\TicketBundle\EventListener\UserLoad($container);
+        $this->_object = new \Flexsounds\TicketBundle\EventListener\UserLoad($container);
     }
 
     public function getMockContainer()

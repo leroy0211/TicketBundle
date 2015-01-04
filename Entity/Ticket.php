@@ -72,6 +72,11 @@ class Ticket
     protected $messages;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Requester", inversedBy="tickets")
+     */
+    protected $requester;
+
+    /**
      * @var datetime
      *
      * @ORM\Column(name="created_at", type="datetime")
@@ -370,4 +375,17 @@ class Ticket
         return $this->messages;
     }
 
+    public function getRequester(){
+        return $this->requester;
+    }
+
+    /**
+     * @param Requester $requester
+     * @return Ticket
+     */
+    public function setRequester(\Flexsounds\TicketBundle\Entity\Requester $requester){
+        $this->requester = $requester;
+
+        return $this;
+    }
 }

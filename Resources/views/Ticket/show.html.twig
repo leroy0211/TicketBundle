@@ -40,6 +40,17 @@
             <div class="col-lg-6 col-md-6 col-sm-6">{{ ticket.priorityString|trans }}</div>
         </div>
     </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:15px">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">Requester:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>{{ ticket.requester.fullName }}</div>
+                <div>{{ ticket.requester.email }}</div>
+                <div>{{ ticket.requester.phone }}</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% set previousStatus = null %}

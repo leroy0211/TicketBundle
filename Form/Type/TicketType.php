@@ -24,6 +24,10 @@ class TicketType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+                ->add('requester', null,  array(
+                    'property' => 'fullName',
+                    'empty_value' => '-Choose a requester-'
+                ))
                 ->add('subject')
                 ->add('messages', 'collection', array(
                     'type' => new TicketMessageType($this->_userManager, true),
